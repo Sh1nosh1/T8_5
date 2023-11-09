@@ -16,7 +16,7 @@ namespace T8_5
 
         public static void P(double length_1, double length_2, double length_3)
         {
-            if (length_1 < length_2 + length_3 || length_2 < length_1 + length_3 || length_3 < length_1 + length_2)
+            if (length_1 < length_2 + length_3 && length_2 < length_1 + length_3 && length_3 < length_1 + length_2)
             {
                 double Per = length_1 + length_2 + length_3;
                 WriteLine($"\nПериметр треугольника ABC: {Per:f2}");
